@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define MAX_CANDIDATOS 5
+
+int main() {
+    int votes[MAX_CANDIDATOS] = {0};
+
+    printf("Sistema de Votação Simples\n");
+
+    while (1) {
+        printf("\nOpções:\n");
+        for (int i = 1; i <= MAX_CANDIDATOS; i++) {
+            printf("%d - Candidato %d\n", i, i);
+        }
+        printf("0 - Encerrar a votação\n");//terminar depois
